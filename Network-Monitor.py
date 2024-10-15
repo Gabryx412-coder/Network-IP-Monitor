@@ -11,7 +11,7 @@ import subprocess
 from ipaddress import ip_address, ip_network
 
 # Configurazione IP e Logging
-my_ip = "192.168.1.150"
+my_ip = "YOUR_IP"
 monitoring_interval = 60  # Secondi tra i controlli
 ddos_threshold = 1000
 port_scan_threshold = 1000
@@ -19,7 +19,7 @@ network_scan_threshold = 200
 brute_force_threshold = 10
 malware_signatures = ["malicious", "phishing"]
 firewall_blacklist = set()
-vpn_ip_ranges = [ip_network("192.168.0.0/24")]
+vpn_ip_ranges = [ip_network("YOUR_IP/24")]
 
 logging.basicConfig(filename='network_security.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
